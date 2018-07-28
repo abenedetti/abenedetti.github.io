@@ -1,7 +1,7 @@
 title: Welcome @alessiobenedetti.com
 description: This is my personal website.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "alessiobenedetti.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "abenedetti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
 author-name:    Alessio Benedetti
