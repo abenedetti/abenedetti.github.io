@@ -1,0 +1,53 @@
+title: Welcome @alessiobenedetti.com
+description: This is my personal website.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "alessiobenedetti.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author
+author-name:    Alessio Benedetti
+author-image:   badge.jpg
+author-job:     Welcome!
+author-email:   info@alessiobenedetti.com # Add your email for contant form.
+author-twitter: alessioBtwt # Add your twitter account
+about-author:   Here is where you can find a track of my digital self.
+
+# Social settings
+social-twitter:   alessioBtwt
+social-facebook:
+social-github:    abenedetti
+social-pinterest: 
+social-instagram: 
+social-youtube:
+social-vk:   
+social-linkedin:
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Google Analytics
+google-analytics: UA-52549735-1 # Add your identifier. For example UA-99631805-1
+
+# Comment Section (Disqus)
+disqus-identifier: abenedettiblog # Add your shortname for Disqus Comment. For example mr-brown
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-paginate
+
+paginate: 7
+paginate_path: "/page/:num/"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
