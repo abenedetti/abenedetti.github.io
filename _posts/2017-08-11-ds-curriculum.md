@@ -13,7 +13,7 @@ Inspired by [Clare's website](http://datasciencemasters.org), I decided to creat
 Here's the content updated on 2nd of June 2018:
 
 ### Title: [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science)
-- **Provided by:**<br> [![coursera]({{ site.url }}/images/2017-08-11-ds-curriculum/coursera.png)](https://www.coursera.org/)
+- **Provided by:**<br> [![coursera](/image/2017-08-11-ds-curriculum/coursera.png)](https://www.coursera.org/)
 - **Type:** Online course
 - **Syllabus:** 9 modules + final capstone project
 - **Status:** Completed
