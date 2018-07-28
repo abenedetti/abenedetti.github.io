@@ -1,4 +1,5 @@
-This website was built by using Artem's jekyll template: https://github.com/artemsheludko/flexible-jekyll, fork it on github or take a look at Artem's repositories: he make other nice templates!
+This website was built with Artem's jekyll template: https://github.com/artemsheludko/flexton
+Fork it on github or take a look at Artem's repositories: he make other nice templates!
 
 
 <h1>Flexton is an ultra-minimalist and responsive theme for Jekyll</h1>
