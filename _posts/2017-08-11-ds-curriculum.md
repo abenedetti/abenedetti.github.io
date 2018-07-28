@@ -20,14 +20,14 @@ Here's the content updated on 2nd of June 2018:
 - **Note:** Good introductory course that let you have a taste of exploratory data analysis, statistical inference, regression models & machine learning, while learning the R language.
 
 ### Title: [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
-- **Provided by:**<br> [![khan_academy]({{ site.url }}/images/2017-08-11-ds-curriculum/khan_academy.jpg)](https://www.khanacademy.org/)
+- **Provided by:**<br> [![khan_academy](/images/2017-08-11-ds-curriculum/khan_academy.jpg)](https://www.khanacademy.org/)
 - **Type:** Online course
 - **Syllabus:** Small videos, transcripts & exercises
 - **Status:** Underway
 - **Note:** I was a bit skeptical about the course contents, but I decided to give it a try during holidays. I have to say that both the contents and the platform were nice to use, even on a mobile device.
 
 ### Title: [Introduction to Computing for Data Analysis](https://www.edx.org/course/introduction-to-computing-for-data-analysis)
-- **Provided by:**<br> [![edx]({{ site.url }}/images/2017-08-11-ds-curriculum/edx.png)](https://www.edx.org/)
+- **Provided by:**<br> [![edx](/images/2017-08-11-ds-curriculum/edx.png)](https://www.edx.org/)
 - **Type:** Online course
 - **Syllabus:** Small videos, jupyter notebooks in python to complete
 - **Status:** Completed
