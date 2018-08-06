@@ -1,3 +1,7 @@
+This website was built with Artem's jekyll template: https://github.com/artemsheludko/flexton
+Fork it on github or take a look at Artem's repositories: he make other nice templates!
+
+
 <h1>Flexton is an ultra-minimalist and responsive theme for Jekyll</h1>
 
 <p>Flexton created especially for those who appreciate minimalism and functionality.</p>
@@ -44,9 +48,3 @@ Check the theme in action [Demo](https://flexton.netlify.com/)
 To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec serve` to start the Jekyll server.
 
 I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
-
-<h2>Buy me a coffee</h2>
-
-<p>If you want to show your appreciation, buy me one <a href="https://www.buymeacoffee.com/artemsheludko" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a> ! Every five cups of coffee and a new theme for Jekyll is ready 😋</p>
-<p>Either way, your support is a way to thank me ❤️</p>
-<p align="center"><b>Thank you for your support!</b></p>
