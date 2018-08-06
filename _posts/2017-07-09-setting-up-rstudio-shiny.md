@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Setting up the whole thing..."
+title: "Setting up <i>Rstudio</i> & <i>Shiny</i> servers"
 date: 2017-07-09 12:00:00 +0300
-image: 2017-07-09-setting-up/main.jpg
+image: 2017-07-09-setting-up-rstudio-shiny/main.jpg
 tags: [domain, vps, ubuntu, shiny, R]
 categories: website
 author: Alessio Benedetti
@@ -30,12 +30,12 @@ As described in Dean's article you may set a custom domain for your shiny server
 	- first, in your registrar, you should add a new NS Record with the host portion of the subdomain, in my case I added the string "thelab" since my subdomain is "thelab.alessiobenedetti.com". You should also add the DNS of your host, in my case I put ["ns1.digitalocean.com"](https://www.digitalocean.com/)
 	- then you'd have to configure a new subdomain (I work with digital ocean and therefore I've made my setup in the "networking" section, as shown in the picture below)
 	
-	![do_networking](/images/2017-07-09-setting-up/do_networking.png)
+	![do_networking](/images/2017-07-09-setting-up-rstudio-shiny/do_networking.png)
 	
 	- then you need to add the subdomain to your vps, by configuring the subdomain files in the following paths `/etc/nginx/sites-available/` and `/etc/nginx/sites-enabled/`
 		- inside the `sites-available` I created a file named `thelab` where I specified the path through the index file and the subdomain, as shown in the image below		
 
-		![nginx_config](/images/2017-07-09-setting-up/setting-up_nginx_config.png)
+		![nginx_config](/images/2017-07-09-setting-up-rstudio-shiny/nginx_config.png)
 		
 		- then in order to enable the configuration made in the previous step, inside the `sites-enabled` I created a symbolic link name `thelab` that references the `thelab` file in the sites-available` directory. This can be done with the following statement `ln -s /etc/nginx/sites-available/thelab /etc/nginx/sites-enabled/thelab`
 		For more details you can refer to the [following guide](https://www.digitalocean.com/community/questions/how-to-create-subdomain-with-nginx-server-in-the-same-droplet) on digital ocean and this [post](https://askubuntu.com/questions/56339/how-to-create-a-soft-or-symbolic-link), I found useful to create symbolic links. 

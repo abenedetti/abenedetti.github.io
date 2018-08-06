@@ -5,9 +5,9 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-  <title>Setting up the whole thing...</title>
+  <title>Setting up <i>Rstudio</i> & <i>Shiny</i> servers</title>
   <meta name='description' content="In this opening post I’d like to share my experience in building up this website. The goal is to recap the steps I followed, in order to set up the various e...">
-  <link rel='canonical' href="http://localhost:4000/2017/07/09/setting-up/">
+  <link rel='canonical' href="http://localhost:4000/2017/07/09/setting-up-rstudio-shiny/">
   <link rel='alternate' type='application/rss+xml' title='Welcome @alessiobenedetti.com' href="http://localhost:4000/feed.xml">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Volkhov:400,700" rel="stylesheet">
@@ -111,11 +111,11 @@
       </div>
     </header>
     
-    <div class="c-article__image o-opacity" style="background-image: url( /images/2017-07-09-setting-up/main.jpg )"></div>
+    <div class="c-article__image o-opacity" style="background-image: url( /images/2017-07-09-setting-up-rstudio-shiny/main.jpg )"></div>
     
     <div class="c-wrap-content">
       <header class="c-article__header">
-        <h1 class="c-article__title">Setting up the whole thing...</h1>
+        <h1 class="c-article__title">Setting up <i>Rstudio</i> & <i>Shiny</i> servers</h1>
         <div class="c-article__date">
           <span>2017, Jul 09</span>
         </div>
@@ -146,7 +146,7 @@
       <li>then you’d have to configure a new subdomain (I work with digital ocean and therefore I’ve made my setup in the “networking” section, as shown in the picture below)</li>
     </ul>
 
-    <p><img src="/images/2017-07-09-setting-up/do_networking.png" alt="do_networking" /></p>
+    <p><img src="/images/2017-07-09-setting-up-rstudio-shiny/do_networking.png" alt="do_networking" /></p>
 
     <ul>
       <li>then you need to add the subdomain to your vps, by configuring the subdomain files in the following paths <code class="highlighter-rouge">/etc/nginx/sites-available/</code> and <code class="highlighter-rouge">/etc/nginx/sites-enabled/</code>
@@ -154,7 +154,7 @@
           <li>inside the <code class="highlighter-rouge">sites-available</code> I created a file named <code class="highlighter-rouge">thelab</code> where I specified the path through the index file and the subdomain, as shown in the image below</li>
         </ul>
 
-        <p><img src="/images/2017-07-09-setting-up/setting-up_nginx_config.png" alt="nginx_config" /></p>
+        <p><img src="/images/2017-07-09-setting-up-rstudio-shiny/nginx_config.png" alt="nginx_config" /></p>
 
         <ul>
           <li>then in order to enable the configuration made in the previous step, inside the <code class="highlighter-rouge">sites-enabled</code> I created a symbolic link name <code class="highlighter-rouge">thelab</code> that references the <code class="highlighter-rouge">thelab</code> file in the sites-available<code class="highlighter-rouge"> directory. This can be done with the following statement </code>ln -s /etc/nginx/sites-available/thelab /etc/nginx/sites-enabled/thelab`
@@ -197,16 +197,28 @@
           
         </div>
         <div class="c-article__share">
-          <a href="https://twitter.com/intent/tweet?text=Setting%20up%20the%20whole%20thing...&url=http://localhost:4000/2017/07/09/setting-up/" title="Share
+          <a href="https://twitter.com/intent/tweet?text=Setting%20up%20%3Ci%3ERstudio%3C/i%3E%20&%20%3Ci%3EShiny%3C/i%3E%20servers&url=http://localhost:4000/2017/07/09/setting-up-rstudio-shiny/" title="Share
           on Twitter" rel="nofollow" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a>
-          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/2017/07/09/setting-up/" title="Share on Facebook" rel="nofollow" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a>
-          <a href="https://plus.google.com/share?url=http://localhost:4000/2017/07/09/setting-up/" title="Share on Google+" rel="nofollow" target="_blank"><div data-icon='ei-sc-google-plus' data-size='s'></div></a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/2017/07/09/setting-up-rstudio-shiny/" title="Share on Facebook" rel="nofollow" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/2017/07/09/setting-up-rstudio-shiny/" title="Share on Google+" rel="nofollow" target="_blank"><div data-icon='ei-sc-google-plus' data-size='s'></div></a>
         </div>
       </div>
       
       <div class="c-recent-post">
         <h4 class="c-recent__title">You might also enjoy</h4>
         <div class="c-recent__box">
+        
+        
+          <div class="c-recent__item">
+            <a class="c-recent__image" href="/2018/08/06/utest/" style="background-image: url( /images/2018-08-06-utest/main.jpeg)"></a>
+            <div class="c-recent__footer">
+              <h4><a href="/2018/08/06/utest/">the <i>uTest</i> testing experience</a></h4>
+              <div class="c-recent__date">
+                <time datetime="2018-08-06T11:41:00+02:00">August 6, 2018</time>
+              </div>
+            </div>
+          </div>
+        
         
         
           <div class="c-recent__item">
