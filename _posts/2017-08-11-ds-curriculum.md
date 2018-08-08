@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data science curriculum"
+title: "Data Science curriculum"
 date: 2017-08-11 12:00:00 +0300
 image: 2017-08-11-ds-curriculum/main.jpg
 tags: [data science]
