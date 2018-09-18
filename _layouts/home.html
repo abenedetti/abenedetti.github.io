@@ -29,16 +29,16 @@ layout: default
     <div class="c-social">
       <div class="c-social__title">Projects</div>
 		<ul class="c-social__list u-lists-reset">
-			<a href="http://thelab.alessiobenedetti.com/shiny/uCountVis/" target="_blank"><div data-icon='ei-chart' data-size='s'></div></a>uCount Visualizer
+			<a href="http://thelab.alessiobenedetti.com/shiny/uCountVis/" target="_blank"><i class="fas fa-chart-bar fa-lg" aria-hidden="true"></i></a><span style="margin-right: 5px;"> - uCount Visualizer</span>
 			<br>
-			<a href="http://thelab.alessiobenedetti.com/shiny/uGeoTagger/" target="_blank"><div data-icon='ei-location' data-size='s'></div></a>uGeoTagger
+			<a href="http://thelab.alessiobenedetti.com/shiny/uGeoTagger/" target="_blank"><i class="fas fa-map-marked-alt fa-lg" aria-hidden="true"></i></a> - uGeoTagger
 		</ul>
 	  <br>
 	  <div class="c-social__title">Social</div>
       <ul class="c-social__list u-lists-reset">
         {% if site.social-twitter %}
           <!--<li class="c-social__item"><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a></li>-->
-		  <li class="c-social__item"><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-cube fa-lg" aria-hidden="true"></i></a></li>
+		  <li class="c-social__item"><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
         {% else %}
         {% endif %}
         {% if site.social-facebook %}
@@ -46,7 +46,8 @@ layout: default
         {% else %}
         {% endif %}
         {% if site.social-github %}
-          <li class="c-social__item"><a href="https://github.com/{{site.social-github}}" target="_blank"><div data-icon='ei-sc-github' data-size='s'></div></a></li>
+          <!--<li class="c-social__item"><a href="https://github.com/{{site.social-github}}" target="_blank"><div data-icon='ei-sc-github' data-size='s'></div></a></li>-->
+		  <li class="c-social__item"><a href="https://github.com/{{site.social-github}}" target="_blank"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a></li>
         {% else %}
         {% endif %}
         {% if site.social-pinterest %}
@@ -63,6 +64,10 @@ layout: default
         {% endif %}
         {% if site.social-vk %}
           <li class="c-social__item"><a href="https://vk.com/{{ site.social-vk }}" target="_blank"><div data-icon='ei-sc-vk' data-size='s'></div></a></li>
+        {% else %}
+		{% endif %}
+        {% if site.social-kaggle %}
+          <li class="c-social__item"><a href="https://www.kaggle.com/{{ site.social-kaggle }}" target="_blank"><i class="fab fa-kaggle fa-lg" aria-hidden="true"></i></a></li>
         {% else %}
         {% endif %}
         {% if site.social-linkedin %}

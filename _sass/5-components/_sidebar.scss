@@ -123,6 +123,26 @@
         transition: $global-transition;
       }
     }
+	.fab {	  
+      color: $darkest;
+	  vertical-align: middle;
+      transition: $global-transition;
+      &:hover {
+        color: $primary-color;
+        transform: scale(1.2);
+        transition: $global-transition;
+      }
+    }
+	.fas {	  
+      color: $darkest;
+	  vertical-align: middle;
+      transition: $global-transition;
+      &:hover {
+        color: $primary-color;
+        transform: scale(1.2);
+        transition: $global-transition;
+      }
+    }	
   }
   .c-copyright {
     p {
