@@ -26,16 +26,9 @@ Here's the content updated on 30th of July 2018:
 - **Status:** Underway
 - **Notes:** I was a bit skeptical about the course contents, but I decided to give it a try during holidays. I have to say that both the contents and the platform were nice to use, even on a mobile device.
 
-### Title: [Introduction to Computing for Data Analysis](https://www.edx.org/course/introduction-to-computing-for-data-analysis)
+### Title: [Analytics MicroMaster: Essential Tools and Methods](https://www.edx.org/micromasters/analytics-essential-tools-methods)
 - **Provided by:**<br> [![edx](/images/2017-08-11-ds-curriculum/edx.png)](https://www.edx.org/)
 - **Type:** Online course
-- **Syllabus:** Small videos, jupyter notebooks in python to complete
+- **Syllabus:** 3 courses: [Introduction to Computing for Data Analysis](https://www.edx.org/course/introduction-to-computing-for-data-analysis), [Introduction to Analytics Modeling](https://www.edx.org/course/introduction-analytics-modeling-gtx-isye6501x-1) and [Data Analytics for Business](https://www.edx.org/course/data-analytics-for-business-0)
 - **Status:** Completed
-- **Notes:** Starting course about numerical computing, with an eye on data-intensive techniques. I suggest to take an introductory Python course before enrolling in this one.
-
-### Title: [Introduction to Analytics Modeling](https://www.edx.org/course/introduction-analytics-modeling-gtx-isye6501x-1)
-- **Provided by:**<br> [![edx](/images/2017-08-11-ds-curriculum/edx.png)](https://www.edx.org/)
-- **Type:** Online course
-- **Syllabus:** Small videos, homeworks & quizzes
-- **Status:** Completed
-- **Notes:** Great overview of several analytics models as well as some analytics software (R, Python, Arena). You should be comfortable with R for this course.
+- **Notes:** The first course is about numerical computing, with an eye on data-intensive techniques. I suggest to take an introductory Python course before enrolling in this one. The second is a great overview of several analytics models as well as some analytics software (R, Python, Arena). You should be comfortable with R for this course. The last is focused mainly on regression models and techniques and needs R skills as well.
