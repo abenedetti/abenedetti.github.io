@@ -69,6 +69,10 @@ layout: default
         {% if site.social-kaggle %}
           <li class="c-social__item"><a href="https://www.kaggle.com/{{ site.social-kaggle }}" target="_blank"><i class="fab fa-kaggle fa-lg" aria-hidden="true"></i></a></li>
         {% else %}
+		{% endif %}
+        {% if site.social-stackoverflow %}
+          <li class="c-social__item"><a href="https://stackoverflow.com/users/{{ site.social-stackoverflow }}" target="_blank"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a></li>
+        {% else %}
         {% endif %}
         {% if site.social-linkedin %}
           <li class="c-social__item"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><div data-icon='ei-sc-linkedin' data-size='s'></div></a></li>
