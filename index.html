@@ -2,8 +2,8 @@
 <html lang="en">
 
   <script>
-		var today = new Date();
-		var yyyy = today.getFullYear();
+	var today = new Date();
+	var yyyy = today.getFullYear();
   </script>
 
   <head>
@@ -28,10 +28,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-
+		
 	<!-- Add favicon -->
 	<link rel="icon" href="favico.png">
-	
+
   </head>
 
   <body id="page-top">
@@ -47,19 +47,34 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#works">Works</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#thelab">The Lab</a>
             </li>
             <!--
 			<li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#posts">Posts</a>
-            </li>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>            
 			-->
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Header -->
+	<!-- Initial Section -->
+	<section id="initial">
+      <br><br>
+	  <div class="container">
+        <img class="img-fluid mb-3 d-block mx-auto" src="img/mybadge.png" alt="">
+		<h2 class="text-center text-uppercase text-secondary mb-0">Hello. I'm Alessio</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="text-center col-lg-12 ml-auto">
+            <p class="lead">Here is where you can find a track of my digital self. You may have a look at some of my works in the lab section below.</p>
+          </div>          
+        </div>        
+      </div>
+    </section>	
+    
+	<!-- Header -->
     <!--
 	<header class="masthead bg-primary text-white text-center">
       <div class="container">
@@ -70,19 +85,13 @@
       </div>
     </header>
 	-->
-	
+
     <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="works">
-      <div class="container">		
-        <br><br><br>		
-		<h2 class="text-center text-uppercase text-secondary mb-0">Hello. I'm Alessio</h2>
-        <hr class="star-dark mb-5">		
-		<div class="row">
-			<div class="col-md-4 col-lg-12">        
-				<p class="lead" style="text-align: center">Here is where you can find a track of my digital self.<br>You may have a look at some of my works in the section below.</p><br>
-			</div>
-        </div>		
-		<div class="row">
+    <section class="portfolio" id="thelab">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">The Lab</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -90,9 +99,9 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/uCount.png" alt="">
+              <img class="img-fluid" src="img/portfolio/shiny.png" alt="shiny">
             </a>
-          </div>
+          </div>		  
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -100,11 +109,11 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/uGeoTagger.png" alt="">
+              <img class="img-fluid" src="img/portfolio/rmarkdown.png" alt="rmarkdown">
             </a>
           </div>
-          <!--
-		  <div class="col-md-6 col-lg-4">
+		  <!--		  
+          <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -148,41 +157,36 @@
         </div>
       </div>
     </section>
-
-    <!-- Posts Section -->
+	
+    <!-- About Section -->
     <!--
-	<section class="bg-primary text-white mb-0" id="posts">
+	<section class="bg-primary text-white mb-0" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">Posts</h2>
+        <h2 class="text-center text-uppercase text-white">About</h2>
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-6 ml-auto">            
-			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light" href="#">
-				<i class="fas fa-file-alt mr-2"></i>
-				Setting up <br> Rstudio & Shiny servers
-				</a>
-			</div>
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
           </div>
-          <div class="col-lg-6 ml-auto">            
-			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light" href="#">
-				<i class="fas fa-file-alt mr-2"></i>
-				The uTest testing <br> experience
-				</a>
-			</div>
-          </div>		  
-        </div>        
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="#">
+            <i class="fas fa-download mr-2"></i>
+            Download Now!
+          </a>
+        </div>
       </div>
     </section>
 	-->
-	
-	<!-- Footer -->
-    <footer class="footer text-center">
+
+    <!-- Footer -->    
+	<footer class="footer text-center">
       <div class="container">
         <div class="row">          
-          <div class="col-md-12 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Social presence</h4>
+          <div class="col-md-12 mb-5 mb-lg-0">            
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/_alessioB_" target="_blank">
@@ -209,10 +213,10 @@
         </div>
       </div>
     </footer>
-
+	
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; <script>document.write(yyyy);</script> - alessiobenedetti.com</small>
+        <small>Copyright &copy; - alessiobenedetti.com - <script>document.write(yyyy);</script></small>
       </div>
     </div>
 
@@ -231,20 +235,44 @@
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
           <i class="fa fa-3x fa-times"></i>
         </a>
-        <div class="container text-center">
+        <div class="container text-justify">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">uCount Visualizer</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">Shiny</h2>
               <hr class="star-dark mb-5">
-              <p class="mb-5">
-				uCount Visualizer is a web application used to analyse and plot uTesters data, that is being collected by uCount script.<br><br>				
-				<b>Technologies:</b> <a href="https://cran.r-project.org/" target="_blank">R</a>, <a href="https://shiny.rstudio.com/" target="_blank">Shiny</a>, <a href="https://developers.google.com/apps-script/" target="_blank">Google Scripting</a><br>
-				<b>Motivation article:</b> <a href="https://www.utest.com/articles/ucount-guess-how-many-we-are" target="_blank">click here</a><br>
-				<b>First release:</b> July 2016 - <a href="https://github.com/abenedetti/uCountVisualizer" target='_blank'>github repository</a><br>
+              <img class="img-fluid mb-5 rounded mx-auto d-block" src="img/portfolio/shiny.png" alt="shiny" style="width:20%;">
+              <p class="mb-5 text-justify">
+			  Shiny makes it incredibly easy to build interactive web applications with R.
+			  Shiny has automatic <i>reactive</i> binding between inputs and outputs and extensive pre-built widgets (<a href="http://shiny.rstudio.com/" target="_blank">homepage</a>).
 			  </p>
-			  <img class="img-fluid mb-5" src="img/portfolio/uCount.png" alt=""><br>
-			  <button class="btn btn-primary btn-lg rounded-pill" type="button" onclick="window.open('http://thelab.alessiobenedetti.com/shiny/uCountVis/');" value="open app">Open <i>uCountVisualizer</i></button>
-			  <button class="btn btn-secondary btn-lg rounded-pill portfolio-modal-dismiss" data-dismiss="modal" type="button"></i>Close Project</button>              
+              <hr>
+			  <h4 class="text-secondary mb-3 text-center">uCount Visualizer & uGeoTagger</h4>			  
+			  <table class="table table-borderless text-center">
+				<tbody>
+					<tr>
+						<td><img src="img/portfolio/uCount.png" alt="uCount" style="width:80%;"></td>
+						<td><img src="img/portfolio/uGeoTagger.png" alt="uGeoTagger" style="width:80%;"></td>
+					</tr>					
+			  </table>			  
+			  <p>
+				uTest has been an inspiration for my first two works, two shiny apps about uTesters' stats and locations (yep in uTest there are no users... :) but uTesters !).			  
+				<a href="https://www.utest.com/" target="_blank">uTest</a> is a professional network for Testers, born on 2007.
+				I signed up on 2015, and during the first two years, I became further and further engaged in the community as well as in the testing activities with over 300 test cycles made.
+				I also was able to reach the silver rating in the functional area.
+				From late 2017 I've reduced the testing activities as a started sharpening my skills in the analytics field, but I kept being active in the community.
+			  </p>			  
+			  Here are the apps and their motivation articles:
+			  <ul>
+				<li>uCount Visualizer: <a href="http://thelab.alessiobenedetti.com/shiny/uCountVis/" target="_blank">app</a>, <a href="https://www.utest.com/articles/ucount-guess-how-many-we-are" target="_blank">article</a></li>
+				<li>uGeoTagger: <a href="http://thelab.alessiobenedetti.com/shiny/uGeoTagger/" target="_blank">app</a>, <a href="https://www.utest.com/articles/ugeotagger-guess-from-where-we-are" target="_blank">article</a></li>		
+			  </ul>			  
+			  <p>			  
+				I made them during my spare time and it was real fun, nonetheless they were a nice application of some of the new skills I studied.
+				Should you be interested in uTest take at look at my <a href="https://www.utest.com/profile/alessio/about" target="_blank">utest profile</a>
+				and my other <a href="https://www.utest.com/profile/alessio/articles" target="_blank">articles</a>.
+			  </p>
+			  <br>
+			  <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss mx-auto d-block" href="#"><i class="fa fa-close"></i>Close Project</a>
             </div>
           </div>
         </div>
@@ -260,23 +288,19 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">uGeoTagger</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
               <hr class="star-dark mb-5">
-              <p class="mb-5">
-				uGeoTagger is a visual app that displays the uTesters world community.<br><br>				
-				<b>Technologies:</b> <a href="https://cran.r-project.org/" target="_blank">R</a>, <a href="https://shiny.rstudio.com/" target="_blank">Shiny</a>, <a href="https://www.mongodb.com/" target="_blank">MongoDB</a><br>
-				<b>Motivation article:</b> <a href="https://www.utest.com/articles/ugeotagger-guess-from-where-we-are" target="_blank">click here</a><br>
-				<b>First release:</b> June 2017 - <a href="https://github.com/abenedetti/uGeoTagger" target='_blank'>github repository</a><br>
-			  </p>
-			  <img class="img-fluid mb-5" src="img/portfolio/uGeoTagger.png" alt=""><br>
-			  <button class="btn btn-primary btn-lg rounded-pill" type="button" onclick="window.open('http://thelab.alessiobenedetti.com/shiny/uGeoTagger/');" value="open app">Open <i>uGeoTagger</i></button>
-			  <button class="btn btn-secondary btn-lg rounded-pill portfolio-modal-dismiss" data-dismiss="modal" type="button">Close Project</button>              
+              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-	
+
     <!-- Portfolio Modal 3 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
       <div class="portfolio-modal-dialog bg-white">
