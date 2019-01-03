@@ -27,7 +27,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">	
 		
 	<!-- Add favicon -->
 	<link rel="icon" href="favico.png">
@@ -245,11 +245,18 @@
               <h2 class="text-secondary text-uppercase mb-0 text-center">Shiny apps</h2>
               <hr class="star-dark mb-5">
               <img class="img-fluid mb-5 rounded mx-auto d-block" src="img/portfolio/shiny.png" alt="shiny" style="width:30%;">
-              <p class="mb-5 text-justify">
-			  Shiny makes it incredibly easy to build interactive web applications with R.
-			  Shiny has automatic <i>reactive</i> binding between inputs and outputs and extensive pre-built widgets (<a href="http://shiny.rstudio.com/" target="_blank">official homepage @RStudio</a>).
-			  </p>
-              <hr><br>
+              <div class="col-lg-8 mx-auto">
+				<p class="mb-5 text-justify">			  
+				<i>
+					<p><blockquote>
+						« Shiny makes it incredibly easy to build interactive web applications with R.
+						Shiny has automatic <i>reactive</i> binding between inputs and outputs and extensive pre-built widgets. »
+					</blockquote></p>
+					<p style="text-align: right; font-size: small;">from the <a href="http://shiny.rstudio.com/" target="_blank">official @RStudio homepage</a></p>
+					</i>
+				</p>
+			  </div>
+			  <hr><br>
 			  <h4 class="text-secondary mb-3 text-center">uCount Visualizer & uGeoTagger</h4>			  
 			  <table class="table table-borderless text-center">
 				<tbody>
@@ -259,22 +266,50 @@
 					</tr>					
 			  </table>			  
 			  <p>
-				uTest has been an inspiration for my first two works, two shiny apps about uTesters' stats and locations (yep in uTest there are no users... :) but uTesters !).			  
-				<a href="https://www.utest.com/" target="_blank">uTest</a> is a professional network for Testers, born on 2007.
+				<a href="https://www.utest.com/" target="_blank">uTest</a><sup>1</sup> has been an inspiration for my first two works, two shiny apps about uTesters' stats and locations
+				(yep in uTest there are no users... 😉 but uTesters !). I made them during my spare time and it was real fun, nonetheless they were a nice application of some of the new skills I studied.				
+			  </p>
+			  <br>			  
+			  <table class="table table-sm" style = "text-align: center;">
+				  <thead>
+					<tr>
+					  <th scope="col"></th>
+					  <th scope="col">uCount Visualizer</th>
+					  <th scope="col">uGeoTagger</th>					  
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row" style = "text-align: left;">First release</th>
+					  <td>July 2016</td>
+					  <td>June 2017</td>
+					</tr>
+					<tr>
+					  <th scope="row" style = "text-align: left;">Technologies</th>
+					  <td><a href="https://cran.r-project.org/" target="_blank">R</a>, <a href="https://shiny.rstudio.com/" target="_blank">Shiny</a>, <a href="https://developers.google.com/apps-script/" target="_blank">Google Scripting</a></td>
+					  <td><a href="https://cran.r-project.org/" target="_blank">R</a>, <a href="https://shiny.rstudio.com/" target="_blank">Shiny</a>, <a href="https://www.mongodb.com/" target="_blank">MongoDB</a></td>
+					</tr>
+					<tr>
+					  <th scope="row" style = "text-align: left; vertical-align: middle;">Motivation article</th>
+					  <td><a class="btn btn-x1 btn-outline-light rounded-pill" href="https://www.utest.com/articles/ucount-guess-how-many-we-are" target="_blank" style="color:black"><i class="fas fa-file-alt mr-2"></i>Read</a></td>
+					  <td><a class="btn btn-x1 btn-outline-light rounded-pill" href="https://www.utest.com/articles/ugeotagger-guess-from-where-we-are" target="_blank" style="color:black"><i class="fas fa-file-alt mr-2"></i>Read</a></td>
+					</tr>
+					<tr>
+					  <th scope="row" style = "text-align: left;">Github repo</th>
+					  <td><a href="https://github.com/abenedetti/uCountVisualizer" target='_blank'>Open</a></td>
+					  <td><a href="https://github.com/abenedetti/uGeoTagger" target='_blank'>Open</a></td>
+					</tr>
+				  </tbody>
+			  </table>			  
+			  <br>
+			  <p style="font-size: small;">
+				<sup>1</sup> uTest is a professional network for Testers, born on 2007.
 				I signed up on 2015, and during the first two years, I became further and further engaged in the community as well as in the testing activities with over 300 test cycles made.
 				I also was able to reach the silver rating in the functional area.
 				From late 2017 I've reduced the testing activities as a started sharpening my skills in the analytics field, but I kept being active in the community.
-			  </p>			  
-			  Here are the apps and their motivation articles:
-			  <ul>
-				<li>uCount Visualizer: <a href="http://thelab.alessiobenedetti.com/shiny/uCountVis/" target="_blank">app</a>, <a href="https://www.utest.com/articles/ucount-guess-how-many-we-are" target="_blank">article</a></li>
-				<li>uGeoTagger: <a href="http://thelab.alessiobenedetti.com/shiny/uGeoTagger/" target="_blank">app</a>, <a href="https://www.utest.com/articles/ugeotagger-guess-from-where-we-are" target="_blank">article</a></li>		
-			  </ul>			  
-			  <p>			  
-				I made them during my spare time and it was real fun, nonetheless they were a nice application of some of the new skills I studied.
 				Should you be interested in uTest take at look at my <a href="https://www.utest.com/profile/alessio/about" target="_blank">utest profile</a>
 				and my other <a href="https://www.utest.com/profile/alessio/articles" target="_blank">articles</a>.
-			  </p>
+			  </p>				
 			  <br>
 			  <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss mx-auto d-block" href="#"><i class="fa fa-close"></i>Close Project</a>
             </div>
@@ -295,14 +330,18 @@
               <h2 class="text-secondary text-uppercase mb-0 text-center">rMarkdown docs</h2>
               <hr class="star-dark mb-5">
               <img class="img-fluid mb-5 rounded mx-auto d-block" src="img/portfolio/rmarkdown.png" alt="rmarkdown" style="width:30%;">
-              <p class="mb-5 text-justify">
-			  rMarkdown lets you insert R code into a markdown document. R then generates a final document, in a wide variety of formats, that replaces the R code with its results.
-			  (<a href="http://rmarkdown.rstudio.com/" target="_blank">official homepage @RStudio</a>).
-			  </p>
+              <div class="col-lg-8 mx-auto">
+				<p class="mb-5 text-justify">
+					<i>
+					<p><blockquote>« rMarkdown lets you insert R code into a markdown document. R then generates a final document, in a wide variety of formats, that replaces the R code with its results. »</blockquote></p>
+					<p style="text-align: right; font-size: small;">from the <a href="http://rmarkdown.rstudio.com/" target="_blank">official @RStudio homepage</a></p>
+					</i>
+				</p>
+			  </div>
               <hr><br>
 			  <h4 class="text-secondary mb-3 text-center">Setting up <i>RStudio</i> & <i>Shiny</i> servers</h4>			  
 			  <div class="text-center mt-4">
-				<a class="btn btn-x1 btn-outline-light" href="http://thelab.alessiobenedetti.com/shiny/rStudioShinyServersSetup/" target="_blank" style="color:black"><i class="fas fa-file-alt mr-2"></i>Read</a>
+				<a class="btn btn-x1 btn-outline-light rounded-pill" href="http://thelab.alessiobenedetti.com/shiny/rStudioShinyServersSetup/" target="_blank" style="color:black"><i class="fas fa-file-alt mr-2"></i>Read</a>
 			  </div>
 			  <br>
 			  <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss mx-auto d-block" href="#"><i class="fa fa-close"></i>Close Project</a>
