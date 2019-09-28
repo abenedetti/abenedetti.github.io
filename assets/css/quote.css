@@ -1,0 +1,15 @@
+div#quote p#quote_on {
+  display: inline;
+}
+
+div#quote:hover p#quote_on {
+  display: none;
+}
+
+div#quote p#quote_off {
+  display: none;
+}
+
+div#quote:hover p#quote_off {
+  display: inline;
+}
