@@ -1,212 +1,261 @@
 ///
-/// Standout by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
+/// Dimension by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Header */
 
-	@include keyframes('reveal-header') {
-		0% { top: -4rem; opacity: 0; }
-		100% { top: 0; opacity: 1; }
-	}
-
-	body {
-		#page-wrapper {
-			padding-top: 4rem;
-
-			@include breakpoint('<=small') {
-				padding-top: 3rem;
-			}
-		}
-	}
-
 	#header {
-		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
-		@include vendor('justify-content', 'flex-end');
-		@include vendor('transition-duration', '#{_duration(transition)}');
-		@include vendor('transition-property', 'background-color padding');
-		@include vendor('transition-timing-function', 'ease-in-out');
-		background: _palette(invert, fg-bold);
-		border: none;
-		color: _palette(fg);
-		height: 4rem;
-		left: 0;
-		line-height: 4rem;
-		padding: 0;
-		position: fixed;
-		text-transform: uppercase;
-		top: 0;
-		width: 100%;
-		z-index: _misc(z-index-base) + 1;
+		@include vendor('flex-direction', 'column');
+		@include vendor('align-items', 'center');
+		@include vendor('transition', (
+			'transform #{_duration(article)} ease-in-out',
+			'filter #{_duration(article)} ease-in-out',
+			'opacity #{_duration(article)} ease-in-out',
+		));
+		background-image: -moz-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
+		background-image: -webkit-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
+		background-image: -ms-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
+		background-image: radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
+		max-width: 100%;
+		text-align: center;
 
-		> .logo {
-			@include vendor('flex', '1');
-			cursor: default;
-			display: block;
-			font-size: 1rem;
-			letter-spacing: _size(letter-spacing);
-			padding-left: 2rem;
-			white-space: nowrap;
+		> * {
+			@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
+			position: relative;
+			margin-top: 3.5rem;
 
-			a {
-				@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
-				color: inherit;
-				font-weight: _font(weight-bold);
-				letter-spacing: _size(letter-spacing);
-				text-decoration: none;
-
-				span {
-					font-weight: _font(weight);
-				}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: calc(-3.5rem - 1px);
+				left: calc(50% - #{_size(border-width) * 1});
+				width: _size(border-width);
+				height: calc(3.5rem + 1px);
+				background: _palette(border);
 			}
 		}
 
-		> a {
-			@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
-			color: inherit;
-			display: block;
-			font-weight: _font(weight-light);
-			letter-spacing: _size(letter-spacing);
-			padding: 0 0.75rem;
-			text-decoration: none;
+		> :first-child {
+			margin-top: 0;
 
-			&:hover, &:focus {
-				color: rgba(_palette(fg-bold),0.5);
+			&:before {
+				display: none;
 			}
+		}
 
-			&[href="#menu"] {
-				@include vendor('transition', 'background #{_duration(transition)} ease-in-out');
-				@include icon(false, solid);
-				@include vendor('display', 'flex');
-				@include vendor('align-items', 'center');
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-				border-left: 1px solid _palette(border);
-				height: calc(4rem - 1px);
-				line-height: 4rem;
-				margin-left: 0.5rem;
-				padding: 0 2rem;
+		.logo {
+			width: 5.5rem;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			border: solid _size(border-width) _palette(border);
+			border-radius: 100%;
 
-				span {
-					@include vendor('order', '1');
-					font-family: _font(family);
-					font-size: 0.65rem;
-					font-weight: _font(weight-bold);
-					margin-right: 0.25rem;
-				}
-
-				&:hover, &:focus {
-					background-color: _palette( border-bg);
-					color: _palette(fg-bold);
-					
-					&:before {
-						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
-					}
-				}
-
+			.icon {
 				&:before {
-					@include vendor('order', '2');
-					background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
-					background-position: center;
-					background-repeat: no-repeat;
-					background-size: 1.75rem;
-					content: '';
-					float: right;
-					height: 1rem;
-					margin-left: 0.5rem;
-					opacity: 1;
-					width: 1rem;
+					font-size: 2rem;
 				}
 			}
 		}
 
-		&.alt {
-			background-color: transparent;
-			border-bottom: 1px solid _palette(invert, border);
-			color: _palette(invert, fg-bold);
-			position: absolute;
+		.content {
+			border-style: solid;
+			border-color: _palette(border);
+			border-top-width: _size(border-width);
+			border-bottom-width: _size(border-width);
+			max-width: 100%;
 
-			> a {
-				&:hover, &:focus {
-					color: _palette(invert, fg-bold);
+			.inner {
+				@include vendor('transition', (
+					'max-height #{_duration(intro)} ease',
+					'padding #{_duration(intro)} ease',
+					'opacity #{_duration(article)} ease-in-out'
+				));
+				@include vendor('transition-delay', '0.25s');
+				padding: 3rem 2rem;
+				max-height: 40rem;
+				overflow: hidden;
+
+				> :last-child {
+					margin-bottom: 0;
 				}
+			}
 
-				&[href="#menu"] {
-					border-left: 1px solid _palette(invert, border);
+			p {
+				text-transform: uppercase;
+				letter-spacing: _font(letter-spacing);
+				font-size: 0.8rem;
+				line-height: 2;
+			}
+		}
 
-					&:hover, &:focus {
-						background-color: _palette(invert, border-bg);
+		nav {
+			ul {
+				@include vendor('display', 'flex');
+				margin-bottom: 0;
+				list-style: none;
+				padding-left: 0;
+				border: solid _size(border-width) _palette(border);
+				border-radius: _size(border-radius);
 
-						&:before {
-							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(invert, fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
+				li {
+					padding-left: 0;
+					border-left: solid _size(border-width) _palette(border);
+
+					&:first-child {
+						border-left: 0;
+					}
+
+					a {
+						display: block;
+						min-width: 7.5rem;
+						height: 2.75rem;
+						line-height: 2.75rem;
+						padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+						text-transform: uppercase;
+						letter-spacing: _font(letter-spacing);
+						font-size: 0.8rem;
+						border-bottom: 0;
+
+						&:hover {
+							background-color: _palette(border-bg);
+						}
+
+						&:active {
+							background-color: _palette(border-bg-alt);
 						}
 					}
+				}
+			}
 
-					&:before {
-						background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 6px; stroke: #{_palette(invert, fg-bold)}; }</style><line x1="10" y1="30" x2="90" y2="30" /><line x1="10" y1="50" x2="90" y2="50" /><line x1="10" y1="70" x2="90" y2="70" /></svg>');
+			&.use-middle {
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: calc(50% - #{_size(border-width) * 1});
+					width: _size(border-width);
+					height: 100%;
+					background: _palette(border);
+				}
+
+				ul {
+					li {
+						&.is-middle {
+							border-left: 0;
+						}
 					}
 				}
 			}
 		}
 
-		& + #banner {
-			margin-top: -4rem;
+		body.is-article-visible & {
+			@include vendor('transform', 'scale(0.95)');
+			@include vendor('filter', 'blur(0.1rem)');
+			opacity: 0;
 		}
 
-		&.reveal {
-			@include vendor('animation', 'reveal-header 0.5s ease');
-
-			> .logo {
-				padding-left: 1.25rem;
+		body.is-preload & {
+			> * {
+				opacity: 0;
 			}
 
-			> nav {
-				padding-right: 0;
+			@include vendor('filter', 'blur(0.125rem)');
+
+			.content {
+				.inner {
+					max-height: 0;
+					padding-top: 0;
+					padding-bottom: 0;
+					opacity: 0;
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			.content {
+				p {
+					br {
+						display: none;
+					}
+				}
 			}
 		}
 
 		@include breakpoint('<=small') {
-			@include vendor('align-items', 'flex-start');
-			height: 3rem;
-			line-height: 3rem;
-			padding: 0 0 0 0.5rem;
+			> * {
+				margin-top: 2rem;
 
-			> .logo {
-				font-size: 0.8rem;
-				padding-left: 1rem;
-
-				span {
-					display: none;
+				&:before {
+					top: calc(-2rem - 1px);
+					height: calc(2rem + 1px);
 				}
 			}
 
-			> a {
-				&[href="#menu"] {
-					height: calc(3rem - 1px);
-					line-height: 3rem;
-					padding: 0 1.5rem;
+			.logo {
+				width: 4.75rem;
+				height: 4.75rem;
+				line-height: 4.75rem;
 
+				.icon {
 					&:before {
-						margin-left: 0;
+						font-size: 1.75rem;
 					}
+				}
+			}
 
-					span {
-						display: none;
-					}
+			.content {
+				.inner {
+					padding: 2.5rem 1rem;
+				}
 
-					&:hover {
-						background-color: transparent;
-					}
+				p {
+					line-height: 1.875;
 				}
 			}
 		}
 
 		@include breakpoint('<=xsmall') {
-			min-width: 320px;
+			padding: 1.5rem 0;
 
-			& + #banner {
-				margin-top: -5rem;
+			.content {
+				.inner {
+					padding: 2.5rem 0;
+				}
+			}
+
+			nav {
+				ul {
+					@include vendor('flex-direction', 'column');
+					min-width: 10rem;
+					max-width: 100%;
+
+					li {
+						border-left: 0;
+						border-top: solid _size(border-width) _palette(border);
+
+						&:first-child {
+							border-top: 0;
+						}
+
+						a {
+							height: 3rem;
+							line-height: 3rem;
+							min-width: 0;
+							width: 100%;
+						}
+					}
+				}
+
+				&.use-middle {
+					&:after {
+						display: none;
+					}
+				}
 			}
 		}
 	}

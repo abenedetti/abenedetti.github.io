@@ -1,17 +1,34 @@
 ///
-/// Standout by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
+/// Dimension by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Image */
 
 	.image {
+		border-radius: _size(border-radius);
 		border: 0;
 		display: inline-block;
 		position: relative;
 
+		&:before {
+			@include vendor('pointer-events', 'none');
+			background-image: url('../../images/overlay.png');
+			background-color: _palette(bg-overlay);
+			border-radius: _size(border-radius);
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
 		img {
+			border-radius: _size(border-radius);
 			display: block;
 		}
 
@@ -26,14 +43,14 @@
 
 		&.left {
 			float: left;
-			margin: 0 1.5rem 1rem 0;
-			top: 0.25rem;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
 		}
 
 		&.right {
 			float: right;
-			margin: 0 0 1rem 1.5rem;
-			top: 0.25rem;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
 		}
 
 		&.fit {
@@ -48,7 +65,7 @@
 
 		&.main {
 			display: block;
-			margin: 0 0 (_size(element-margin) * 1.5) 0;
+			margin: (_size(element-margin) * 1.25) 0;
 			width: 100%;
 
 			img {
@@ -58,7 +75,13 @@
 
 		@include breakpoint('<=small') {
 			&.main {
-				margin: 0 0 _size(element-margin) 0;
+				margin: (_size(element-margin) * 1) 0;
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			&.main {
+				margin: (_size(element-margin) * 0.75) 0;
 			}
 		}
 	}

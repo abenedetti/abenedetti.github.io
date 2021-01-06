@@ -3,15 +3,13 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'libs/html-grid';
-@import 'libs/fixed-grid';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:600');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600');
 
 /*
-	Standout by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 // Breakpoints.
@@ -25,32 +23,6 @@
 		xxsmall:  ( null,    360px  )
 	));
 
-// Mixins.
-
-	@mixin color($p) {
-		@include color-typography($p);
-		@include color-box($p);
-		@include color-button($p);
-		@include color-form($p);
-		@include color-list($p);
-		@include color-section($p);
-		@include color-table($p);
-		@include color-contact-icons($p);
-		@include color-split($p);
-		@include color-tabs($p);
-	}
-
-	@mixin sr-only {
-		border: 0;
-		clip: rect(0,0,0,0);
-		height: 1px;
-		margin: -1px;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-		width: 1px;
-	}
-
 // Base.
 
 	@import 'base/reset';
@@ -59,27 +31,20 @@
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/box';
-	@import 'components/button';
 	@import 'components/form';
+	@import 'components/box';
 	@import 'components/icon';
 	@import 'components/image';
 	@import 'components/list';
 	@import 'components/actions';
-	@import 'components/tabs';
 	@import 'components/icons';
-	@import 'components/contact-icons';
-	@import 'components/section';
 	@import 'components/table';
-	@import 'components/wrapper';
-	@import 'components/gallery';
-	@import 'components/split';
+	@import 'components/button';
 
 // Layout.
 
+	@import 'layout/bg';
+	@import 'layout/wrapper';
 	@import 'layout/header';
-	@import 'layout/menu';
-	@import 'layout/banner';
 	@import 'layout/main';
 	@import 'layout/footer';
