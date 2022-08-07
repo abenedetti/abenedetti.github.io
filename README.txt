@@ -57,8 +57,7 @@ Credits:
 		(Original) Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
 			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
 
-		(Adapted) Andras Vas via Unsplash (unsplash.com - CC0 licensed)
-			 "https://unsplash.com/photos/PPXG_aN4IOo"
+		(Adapted) Photo by Miguel Á. Padriñán from Pexels: https://www.pexels.com/photo/photo-of-golden-cogwheel-on-black-background-3785927/
 
 	Icons:
 		Font Awesome (fontawesome.io)
